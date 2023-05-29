@@ -16,3 +16,6 @@ const student: {
 if(student.access === 0){
     console.log('is admin')
 }
+
+
+//1:16:00 tutorial pause
