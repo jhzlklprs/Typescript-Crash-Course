@@ -1,0 +1,31 @@
+//app.ts
+
+const inputNum1 = document.getElementById('input1') as HTMLInputElement;
+const inputNum2 = document.getElementById('input2') as HTMLInputElement;
+const submitBtn = document.querySelector('button');
+
+
+function addNumbers(num1 : number, num2 : number) {
+    return num1 + num2;
+}
+
+
+submitBtn?.addEventListener('click', () => {
+    console.log(`The sum ${addNumbers( +inputNum1.value, +inputNum2.value)}`);
+});
+
+
+
+
+
+//app.js
+
+var inputNum1 = document.getElementById('input1');
+var inputNum2 = document.getElementById('input2');
+var submitBtn = document.querySelector('button');
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+submitBtn === null || submitBtn === void 0 ? void 0 : submitBtn.addEventListener('click', function () {
+    console.log("The sum ".concat(addNumbers(+inputNum1.value, +inputNum2.value)));
+});
