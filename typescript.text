@@ -29,3 +29,26 @@ function addNumbers(num1, num2) {
 submitBtn === null || submitBtn === void 0 ? void 0 : submitBtn.addEventListener('click', function () {
     console.log("The sum ".concat(addNumbers(+inputNum1.value, +inputNum2.value)));
 });
+
+
+
+
+//Basic Data Types
+
+function addFunction(num1 : number, num2 : number, showResult : boolean, message : string){
+    const result = num1 + num2;
+    if(showResult){
+        console.log(message + result);
+    } else {
+        console.log("Show result is false");
+    }
+}
+
+const number1 = 5;
+const number2 = 2.4;
+const showResult = true;
+const message = 'Sum is : '
+
+
+
+addFunction(number1, number2, showResult, message);
